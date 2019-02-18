@@ -9,15 +9,14 @@ import java.util.List;
 public abstract class Base {
 
   private static final Splitter CSV_SPLITTER = Splitter.on(",").omitEmptyStrings().trimResults();
-
-  public static List<String> parseCsv(final String input) {
-    return CSV_SPLITTER.splitToList(input);
-  }
-
   protected List<String> inputLines;
 
   public Base(final List<String> inputLines) {
     this.inputLines = inputLines;
+  }
+
+  public static List<String> parseCsv(final String input) {
+    return CSV_SPLITTER.splitToList(input);
   }
 
   public abstract String solve();
