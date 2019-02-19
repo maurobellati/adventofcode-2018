@@ -161,7 +161,7 @@ public class Day5 {
 
   private String reducePolymer(final String input) {
     Matcher matcher = REGEX.matcher(input);
-    String result = "";
+    String result = input;
 
     while (matcher.find()) {
       result = matcher.replaceAll("");
