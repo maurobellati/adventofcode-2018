@@ -60,7 +60,7 @@ import java.util.stream.Stream;
  */
 public class Day5 {
   @Nested
-  public static class Day4Test {
+  public static class Day5Test {
 
     static Stream<Arguments> part1examples() {
       return Stream.of(
