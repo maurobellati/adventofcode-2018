@@ -20,6 +20,7 @@ import com.google.common.collect.Sets;
 import lombok.Value;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 
@@ -127,6 +128,7 @@ public class Day7 {
       );
     }
 
+    @ParameterizedTest
     @MethodSource
     public void part1examples(final List<String> input, String expected) {
       assertThat(new Day7(input).part1()).isEqualTo(expected);
